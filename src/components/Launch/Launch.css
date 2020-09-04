@@ -1,0 +1,35 @@
+.launch {
+  height: 200px;
+  width: 800px;
+  padding: 8px;
+  display: flex;
+  box-shadow: 1px 1px 8px 1px darkgray;
+  margin-top: 50px;
+  margin: 30px auto auto 20px;
+}
+.launch img {
+  width: 200px;
+  height: 200px;
+}
+
+.content .info {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  height: 60px;
+  color: blueviolet;
+}
+
+.content {
+  margin-left: 20px;
+  width: 80%;
+}
+
+.content {
+  font-size: 20px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 30px;
+}
