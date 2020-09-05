@@ -1,6 +1,6 @@
 .launch {
   height: 200px;
-  width: 800px;
+  width: 900px;
   padding: 8px;
   display: flex;
   box-shadow: 1px 1px 8px 1px darkgray;
@@ -28,7 +28,7 @@
 .content {
   font-size: 20px;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
   line-height: 30px;
