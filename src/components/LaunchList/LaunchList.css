@@ -3,3 +3,7 @@
   height: 80vh;
   margin: auto;
 }
+
+.link {
+  text-decoration: none;
+}

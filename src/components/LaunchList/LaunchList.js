@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Launch from "../Launch/Launch";
 import "./LaunchList.css";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 export class LaunchList extends Component {
   state = {
@@ -36,13 +37,18 @@ export class LaunchList extends Component {
           ? "https://farm8.staticflickr.com/7624/17170624642_e5949d160e_o.jpg"
           : launch.links.flickr_images[0];
       return (
-        <Launch
+        <Link
+          to={"/launchview/" + launch.flight_number}
+          className="link"
           key={"launch" + index}
-          title={launch.mission_name}
-          date={launch.launch_date_local}
-          img={imgCondition}
-          desc={launch.details}
-        />
+        >
+          <Launch
+            title={launch.mission_name}
+            date={launch.launch_date_local}
+            img={imgCondition}
+            desc={launch.details}
+          />
+        </Link>
       );
     });
     return list;
